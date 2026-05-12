@@ -467,7 +467,7 @@
 
 %   DEDICATION AND ACKNOWLEDGEMENTS  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-%   Provides environments for optional dedication and acknowledgements pages.
+%   Provides environments for optional dedication,  acknowledgements, glossary, and preface pages.
 %
 
 \newenvironment{dedication}{%

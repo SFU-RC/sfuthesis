@@ -33,16 +33,24 @@
 
 
 \title{An example of a thesis on the subject of your degree}
+%Choose only one of the following thesis types, Thesis / Research Project / Capstone
 \thesistype{Thesis}
-\author{Stuart Arthur Dent}
+%\thesistype{Research Project}
+%\thesistype{Capstone}
+
+\author{FirstName MiddleName LastName}
+% If more than one previous degree, list them in descending order
 \previousdegrees{%
-    M.Sc., Wossamotta University, 1963\\
-    B.Sc., Unseen University, 1836}
+    Previous degree, Institution, YEAR\\
+%    Previous degree, Institution, YEAR
+    }
+%Choose only one of the following degrees, and complete the "Master of" title
 \degree{Doctor of Philosophy}
+%\degree{Master of }
 \department{Department of Inadvisably Applied Mathematics}
 \faculty{Faculty of Example Names}
-\copyrightyear{2025}
-\semester{Fall 2025}
+\copyrightyear{2026}
+\semester{Fall 2026}
 
 
 %   You may include up to six keywords or phrases. Keywords should be separated
@@ -50,8 +58,9 @@
 \keywords{thesis template; Simon Fraser University; \LaTeX; time travel paradoxes}
 
 \committee{
-    \chair{Pamela Isely}{Assistant Professor, Computing Science}
-    \member{Emmett Brown}{Supervisor \\ Professor, Computing Science}
+    \chair{\textbf{Pamela Isely}}{Assistant Professor, Computing Science}
+    \member{Emmett Brown}{Academic Supervisor \\ Professor, Computing Science}
+%   If you have two or more supervisors, list each as an "Academic Co-Supervisor" and not simply as an "Academic Supervisor".
     \member{Bonnibel Bubblegum}{Committee Member \\ Associate Professor, Computing Science}
     \member{James Moriarty}{Committee Member \\ Adjunct Professor, Computing Science}
     \member{Kaylee Frye}{Examiner \\ Assistant Professor, Engineering Science}
@@ -108,6 +117,7 @@
 % The pdfx package is needed here to make a PDF/A version of your thesis. Don't change the order in which the following two lines appear, and don't add any options to the hyperref package.           
 \usepackage[a-1b]{pdfx}      
 \usepackage{hyperref}    
+
           
 %\usepackage[pdfborder={0 0 0}]{hyperref}        
 % \usepackage{pdfpages}                         
@@ -151,9 +161,6 @@
 %   Title page, committee page, abstract, dedication, acknowledgements, table
 %   of contents, etc.
 %
-%   If your research requires an Ethics Statement, download the pdf from
-%   https://www.lib.sfu.ca/help/publish/thesis/regulations#ethics-statement
-%   to your thesis folder, then uncomment the appropriate lines below.
 
 \begin{document}
 
@@ -161,9 +168,6 @@
 \maketitle{}
 \makecommittee{}
 
-%\addtoToC{Ethics Statement}%
-%\includepdf[pagecommand={\thispagestyle{plain}}]{ethics_statement_piii.pdf}%
-%\clearpage
 
 \begin{abstract}
 Abstract paragraphs should be unindented. Master's abstracts are limited to 150 words; the limit is 350 words for doctoral abstracts. Abstract text must fit on a single page.
@@ -194,6 +198,16 @@ This is an optional page. Use your choice of paragraph style for text on this pa
 \clearpage
 
 
+	
+%Choose only one page title, Preface or Executive Summary or Opening Image. This page is optional unless ethics approval was required.
+
+% If ethics approval was required for the research, the Preface must include the Ethics Number(s) of the Certificate(s) applicable to the project, the title of the project, the name of the Primary Investigator, name of the institution, and name(s) of the REB. The content of the Preface must be verified by the student's supervisor, whose endorsement must appear on the final Thesis or Dissertation Approval form (see an example of wording below). If no ethics approval was required, remove the following lines.
+
+
+\chapter{Preface/Executive Summary/Opening Image}
+Research Ethics approval was obtained from the SFU Research Ethics Board, Simon Fraser University, Primary Investigator: Professor A Smith, Project title: A Comparison of Psychological Variables, (HXX-YYYY).
+\clearpage
+
 
 
 
@@ -206,8 +220,7 @@ This is an optional page. Use your choice of paragraph style for text on this pa
 
 \chapter{Introduction}
 
-Start writing or pasting in your text here. By default, only works cited in the text will be added to the bibliography~\cite{latexcompanion}.
-
+Start writing or pasting in your text here. By default, only works cited in the text will be added to the bibliography~\cite{latexcompanion}. 
 
 
 %   BACK MATTER  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
