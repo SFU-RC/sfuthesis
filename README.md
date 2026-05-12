@@ -1,12 +1,12 @@
 # sfuthesis
 
-The `sfuthesis` project provides a template from which graduate students at Simon Fraser University can start writing their thesis.   
+The `sfuthesis` project provides a template from which graduate students at Simon Fraser University can start writing their thesis.
 
 The LaTeX class file `sfuthesis.cls` sets your document to follow the SFU Library's style requirements, so you can focus on writing up your research instead of fiddling with formatting.
 
 As of Fall 2025, the SFU Library has approved the 2.4.0 release of `sfuthesis` to replace any older thesis templates.
 
-Please note that SFU Library does not provide technical support for LaTeX users, and provides this project 'as-is'. Before you submit your thesis, please make sure to **double-check all style requirements** on the [SFU Library website](http://www.lib.sfu.ca/help/publish/thesis).
+Before you submit your thesis, please make sure to **double-check all style requirements** on the [SFU Library website](http://www.lib.sfu.ca/help/publish/thesis).
 There are several standards (e.g. abstract word limits) that LaTeX cannot automatically arrange for you, and you are ultimately responsible for making sure that your thesis conforms to the regulations set out by the Library.
 
 
@@ -46,28 +46,13 @@ latexmk -pdf thesis.tex
 
 To get started writing your thesis, just follow the installation instructions above and replace the sample content in `template.tex` with your own!
 
-
-### Including an Ethics Statement
-
-If your research requires an Ethics Statement, you will need to [download a PDF copy of the statement][ethics] and include it immediately after the Declaration of Committee page.
-
-```latex
-\usepackage{pdfpages}
-
-...
-
-\addtoToC{Ethics Statement}%
-\includepdf[pagecommand={\thispagestyle{plain}}]{ethicsstatement.pdf}%
-\clearpage
-```
-
 The SFU Library has moved to digital-only thesis submission and no longer requires print copies of theses be submitted. However, if you do want to print your thesis, you can use the `bound` or `twoside` options to set margins for book binding.
 
 ### Creating a PDF/A for your SFU Library submission 
 
 Once you compile your tex file, try compiling it again with pdflatex a couple of times. If you open the resulting PDF file in Acrobat Reader, you should now see a blue header announcing that "This file claims compliance with the PDF/A standard". This does not yet mean that your file has been validated to be valid PDF/A only that the file claims to be PDF/A. 
 
-Include the PDF metadata by editing the file template.xmpdata in the SFU thesis package. Note that you can't use any LaTeX symbols in your metadata, but you can use symbols in UTF-8. Then recompile your document, reopen the file in Acrobat, and check that your metadata shows up correctly; in Acrobat Reader, go to "File" -> "Properties". You should see your thesis title, author, subject (the abstract), and keywords. 
+Manually add the PDF metadata to the text of the file template.xmpdata in the SFU thesis package. Note that you can't use any LaTeX symbols in your metadata, but you can use symbols in UTF-8. Then recompile your document, reopen the file in Acrobat, and check that your metadata shows up correctly; in Acrobat Reader, go to "File" -> "Properties". You should see your thesis title, author, subject (the abstract), and keywords. 
 
 
 
